@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+cd "$(dirname "$0")"/..
+
+docker-compose restart
+APP=rails600rc1ondocker_web_1
+docker attach $APP
